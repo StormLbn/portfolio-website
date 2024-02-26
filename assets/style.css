@@ -245,7 +245,7 @@ main {
 
     color: var(--contrast-text-color);
 
-    background-image: url("/assets/images/bg-abstract-blue.jpg");
+    background-image: url("images/bg-abstract-blue.jpg");
     background-size: cover;
 
     overflow: hidden;
