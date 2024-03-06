@@ -458,6 +458,10 @@ main {
     }
 
     & .link-buttons {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 10px 20px;
 
         > :hover {
             transform: scale(1.2);
