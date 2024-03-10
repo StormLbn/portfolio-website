@@ -14,6 +14,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <!-- JS script -->
+    <script src="assets/main.js" defer></script>
 </head>
 
 <body>
@@ -34,12 +36,9 @@
             <div id="lang-en">
                 <a href="#">&#127468&#127463</a>
             </div>
-            <!-- Future feature : light/dark mode toggle -->
-            <div id="icon-light">
-                <a href=""><span class="bi bi-brightness-high-fill"></span></a>
-            </div>
-            <div id="icon-dark">
-                <a href=""><span class="bi bi-moon-fill"></span></a>
+            <div id="theme">
+                <span id="icon-light" class="bi bi-brightness-high-fill" title="Passer en thème sombre"></span>
+                <span id="icon-dark" class="bi bi-moon-fill" title="Passer en thème clair"></span>
             </div>
         </div>
     </header>
@@ -195,7 +194,7 @@
                                 Voir sur GitHub
                                 <span class="bi bi-box-arrow-up-right"></span>
                             </a>
-                            
+
                             <a href="https://stormlbn.github.io/sliding-puzzle" target="_blank">
                                 Visiter la page
                                 <span class="bi bi-box-arrow-up-right"></span>

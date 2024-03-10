@@ -1,17 +1,29 @@
 /* Color variables */
 :root {
     --primary-color-code: 12, 108, 192;
-
     --primary-color: rgb(var(--primary-color-code));
+
+    --bars-bg-color: #1c2328;
+    --faint-text-color: #666;
+    --contrast-text-color: #fff;
+}
+
+[data-theme="light"] {
     --secondary-color: #c2dff5;
     --background-color: #ffffff;
-    /* --card-background-color: #ffffff; */
     --card-background-color: #f6fbfe;
-    --title-text-color: #113264;
 
-    --bars-bg-color: #1C2328;
-    --bars-faint-color: rgb(100, 100, 100);
-    --contrast-text-color: #ffffff;
+    --main-text-color: #000000;
+    --title-text-color: #113264;
+}
+
+[data-theme="dark"] {
+    --secondary-color: #092a44;
+    --background-color: #0d0d0d;
+    --card-background-color: #090d11;
+
+    --main-text-color: #f2f2f2;
+    --title-text-color: #a8c5f0;
 }
 
 /* Animation keyframes */
@@ -72,7 +84,11 @@ html {
 body {
     margin: 0;
     padding: 0;
+
+    color: var(--main-text-color);
     background-color: var(--background-color);
+
+    transition: background-color 0.4s ease;
 
     & * {
         margin: 0;
@@ -81,6 +97,8 @@ body {
 
         font-size: 18px;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        transition: background-color 0.4s ease, color 0.4s ease;
     }
 }
 
@@ -175,8 +193,9 @@ header {
         flex-flow: row nowrap;
         gap: 10px;
 
-        /* Advanced features, not implemented yet */
-        display: none;
+        > div:hover {
+            cursor: pointer;
+        }
     }
 
     & .bi {
@@ -184,6 +203,7 @@ header {
     }
 }
 
+#lang-en,
 #lang-fr,
 #icon-dark {
     display: none;
@@ -220,13 +240,13 @@ footer {
     & .separator {
         width: 80%;
         height: 0;
-        border-bottom: 1px solid var(--bars-faint-color);
+        border-bottom: 1px solid var(--faint-text-color);
     }
 
     & p,
     & p * {
         font-size: 14px;
-        color: var(--bars-faint-color);
+        color: var(--faint-text-color);
     }
 }
 
@@ -342,6 +362,8 @@ main {
     display: flex;
     flex-flow: column nowrap;
     gap: 30px;
+
+    transition: background-color 0.4s ease;
 
     & h2 {
         margin: 0;
@@ -465,7 +487,7 @@ main {
 
         > :hover {
             transform: scale(1.2);
-            box-shadow: 0 10px 20px -10px var(--bars-faint-color);
+            box-shadow: 0 10px 20px -10px var(--faint-text-color);
         }
 
         & a {

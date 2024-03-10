@@ -20,6 +20,7 @@ The website bookmark icon was generated using [favicon.io](https://favicon.io/).
 - Footer with contact links
 - Icons and buttons animated on hover
 - Project preview image change to other image or Gif demo on hover
+- Dark mode
 
 ### 📝 To-do
 - Responsiveness
@@ -28,5 +29,4 @@ The website bookmark icon was generated using [favicon.io](https://favicon.io/).
 - Add custom, more visible labels to *languages and tools* icons on hover
 - Animate on scroll
 - Change mail link behavior from *mailto* to *copy to clopboard*
-- Add dark mode
 - Make website multilangual (English/French)
