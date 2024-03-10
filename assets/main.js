@@ -1,6 +1,6 @@
 const systemSettingLight = window.matchMedia("(prefers-color-scheme: light)");
 const themeToggleElt = document.querySelector("div#theme");
-const mailLinkElt = document.querySelector("span#my-mail");
+const mailLinkElt = document.querySelector("a#mail-link");
 
 // Functions for light/dark theme toggle
 const getPreferedTheme = (systemSettingLight) => {
@@ -21,7 +21,7 @@ const themeHandler = () => {
 
 // Function to copy mail to clipboard
 const copyMail = () => {
-    const myMail = mailLinkElt.innerHTML.trim();
+    const myMail = mailLinkElt.querySelector("#my-mail").innerHTML.trim();
     navigator.clipboard.writeText(myMail);
 
     document.querySelector("span#copy-icon").classList.remove("bi-clipboard");
@@ -34,3 +34,5 @@ const copyMail = () => {
 let currentTheme = getPreferedTheme(systemSettingLight);
 
 themeToggleElt.addEventListener("click", themeHandler);
+
+mailLinkElt.addEventListener("click", copyMail);
