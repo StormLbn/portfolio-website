@@ -21,6 +21,7 @@ The website bookmark icon was generated using [favicon.io](https://favicon.io/).
 - Icons and buttons animated on hover
 - Project preview image change to other image or Gif demo on hover
 - Dark mode
+- Mail copied to clipboard on click
 
 ### 📝 To-do
 - Responsiveness
@@ -28,5 +29,4 @@ The website bookmark icon was generated using [favicon.io](https://favicon.io/).
 - Make demo Gif restart from the beginning if re-hovering project
 - Add custom, more visible labels to *languages and tools* icons on hover
 - Animate on scroll
-- Change mail link behavior from *mailto* to *copy to clopboard*
 - Make website multilangual (English/French)

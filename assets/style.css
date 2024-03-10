@@ -233,8 +233,8 @@ footer {
         }
     }
 
-    & .bi-copy {
-        font-size: 16px;
+    & .bi-clipboard-check {
+        color: greenyellow;
     }
 
     & .separator {
